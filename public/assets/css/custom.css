@@ -1,0 +1,239 @@
+.col-item-width {
+    width: 20%;
+    float: left
+}
+
+.zoom:after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(icon.png)
+}
+
+.zoom img {
+    display: block
+}
+
+.zoom img::selection {
+    background-color: transparent
+}
+
+#ex2 img:hover {
+    cursor: url(grab.cur), default
+}
+
+#ex2 img:active {
+    cursor: url(grabbed.cur), default
+}
+
+.bshadow {
+    -webkit-box-shadow: 4px 0 18px -6px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 4px 0 18px -6px rgba(204, 204, 204, 1);
+    box-shadow: 4px 0 18px -6px rgba(204, 204, 204, 1);
+    padding: 60px
+}
+
+.filter {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.filter input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+
+.filter:hover input~.checkmark {
+    background-color: #ccc
+}
+
+.filter input:checked~.checkmark {
+    background-color: #a0285e
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.filter input:checked~.checkmark:after {
+    display: block
+}
+
+.filter .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.nav-tabs>button {
+    float: none;
+    display: inline-block;
+    zoom: 1
+}
+
+.nav-tabs {
+    text-align: center
+}
+
+.navbar-brand .main-logo,
+.navbar-brand .white-logo,
+.navbar-brand img {
+    width: 40%
+}
+
+.account-title {
+    border-bottom: 1px solid #ebebeb;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: capitalize
+}
+
+.nav-pills {
+    border: 1px solid #ebebeb;
+    width: 20%
+}
+@media (max-width: 768px) {
+    .nav-pills {
+        padding: 0 14px 0 14px !important;
+        width: 100%;
+    }
+}
+
+.nav-pills button i {
+    font-size: 16px;
+    margin-right: 10px
+}
+
+.edit-address-btn i {
+    margin-right: 5px
+}
+
+.btn-addres {
+    text-align: right
+}
+
+.bxs-plus-square {
+    color: #a0285e !important;
+    font-size: 28px !important;
+    margin-bottom: 10px !important
+}
+
+.myaccount-content {
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #ebebeb;
+    padding: 30px
+}
+
+.myaccount-content h3 {
+    border-bottom: 1px solid #ebebeb;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 20px
+}
+
+.p-0 {
+    padding: 0
+}
+
+.account-details-form .form-control {
+    margin-bottom: 20px
+}
+
+.orderInfo p span {
+    color: #a0285e;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.orderInfo p {
+    margin-bottom: 0 !important
+}
+
+.orderInfo {
+    margin-bottom: 20px
+}
+
+.myaccount-content table td {
+    padding: 15px
+}
+
+.btn-pending {
+    background-color: red
+}
+
+.view-cart {
+    border: 1px solid #a0285e;
+    color: #a0285e;
+    padding: 4px 15px;
+    border-radius: 3px;
+    transition-timing-function: ease-in;
+    transition: .2s
+}
+
+.view-cart:hover {
+    background: #a0285e;
+    color: #FFF;
+    padding: 4px 15px;
+    border-radius: 3px
+}
+
+.widget-title {
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.widget-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    bottom: -1px;
+    background-color: #a0285e
+}
